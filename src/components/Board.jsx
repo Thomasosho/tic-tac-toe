@@ -1,4 +1,7 @@
+import { useEffect } from "react";
 import Square from "./Square";
+
+
 
 function calculateWinner(squares) {
     const lines = [
@@ -21,6 +24,9 @@ function calculateWinner(squares) {
   }
 
 function Board({ xIsNext, squares, onPlay }) {
+  // useEffect(() => {
+  // }, [])
+
     function handleClick(i) {
       if (calculateWinner(squares) || squares[i]) {
         return;
@@ -36,14 +42,27 @@ function Board({ xIsNext, squares, onPlay }) {
   
     const winner = calculateWinner(squares);
     let status;
+    const statusElement = document.querySelector('.status');
+
+    // statusElement.classList.add('none')
     if (winner) {
+      statusElement?.classList.add('fade')
       status = 'Winner: ' + winner;
+      setTimeout(() => {
+        statusElement?.classList.remove('fade')
+
+      }, 2000);
     } else {
+      statusElement?.classList.add('fade')
       status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+      setTimeout(() => {
+        statusElement?.classList.remove('fade')
+
+      }, 2000);
     }
   
     return (
-      <>
+      <div className="game_container">
         <div className="status">{status}</div>
         <div className="board-row">
           <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
@@ -60,7 +79,7 @@ function Board({ xIsNext, squares, onPlay }) {
           <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
           <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
         </div>
-      </>
+      </div>
     );
   }
 
