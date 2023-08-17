@@ -58,17 +58,18 @@ button:focus-visible {
 .status {
   width: 200px;
   height: 50px;
-  background-color: #f0f0f0;
+  background-color: #535bf2;
   position: fixed;
-  top: 50%;
+  top: 5%;
   left: 50%;
-  transform: translate(-50%, -500%);
+  transform: translateX(-50%);
   justify-content: center;
   align-items: center;
   color: #000000;
   border-radius: 7px;
   display: flex;
   opacity: 0;
+  color: #ffffff;
 }
 
 .fade {
