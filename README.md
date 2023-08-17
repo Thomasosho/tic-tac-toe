@@ -2,9 +2,10 @@
 
 # Tic Tac Toe Game
 
-![Tic Tac Toe Banner](banner.png)
+<img width="381" alt="Screen Shot 2023-08-17 at 3 31 01 PM" src="https://github.com/Thomasosho/tic-tac-toe/assets/11132861/aacde2ff-048d-46a8-bb87-a4e5cf9f8f0d">
 
-Welcome to our Tic Tac Toe game project! This is a classic two-player game developed by our team consisting of James Osho Thomas, Hammed Tiamiyu, and Saleem Jibril. In this game, players take turns marking a 3x3 grid with their respective symbols, traditionally 'X' and 'O', with the goal of forming a line of three of their symbols either horizontally, vertically, or diagonally.
+
+Welcome to our Tic Tac Toe game project! This is a classic two-player game developed by our team consisting of James Osho Thomas, Hammed Tiamiyu, and Saleem Jibril. In this game, players take turns marking a 3x3 grid with their respective symbols, traditionally 'X' and 'O', to form a line of three of their characters either horizontally, vertically, or diagonally.
 
 ## Features
 
@@ -35,7 +36,7 @@ Welcome to our Tic Tac Toe game project! This is a classic two-player game devel
 
 4. Follow the on-screen instructions to take turns and make moves on the game board. The first player to get three of their symbols in a row (horizontally, vertically, or diagonally) wins the game.
 
-5. To quit the game at any time, press `Ctrl + C`.
+5. To quit the game anytime, press `Ctrl + C`.
 
 ## Screenshots
 
