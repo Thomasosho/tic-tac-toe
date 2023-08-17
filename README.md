@@ -18,7 +18,7 @@ Welcome to our Tic Tac Toe game project! This is a classic two-player game devel
 1. Clone the repository to your local machine using the following command:
    
    ```
-   git clone https://github.com/your-username/tic-tac-toe.git
+   git clone https://github.com/Thomasosho/tic-tac-toe.git
    ```
 
 2. Navigate to the project directory:
@@ -30,7 +30,7 @@ Welcome to our Tic Tac Toe game project! This is a classic two-player game devel
 3. Run the game:
    
    ```
-   python tic_tac_toe.py
+   npm run dev
    ```
 
 4. Follow the on-screen instructions to take turns and make moves on the game board. The first player to get three of their symbols in a row (horizontally, vertically, or diagonally) wins the game.
