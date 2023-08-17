@@ -55,6 +55,69 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.status {
+  width: 200px;
+  height: 50px;
+  background-color: #f0f0f0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -500%);
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  border-radius: 7px;
+  display: flex;
+  opacity: 0;
+}
+
+.fade {
+  animation: fadeOut 4s forwards;
+  z-index: -1;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  font-size: 40px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.square:hover {
+  transform: scale(1.1);
+  border-color: #535bf2;
+}
+
+.game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.game-info {
+  margin-top: 20px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.game_title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -65,5 +128,14 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@keyframes fadeOut {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
   }
 }
