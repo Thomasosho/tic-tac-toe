@@ -17,6 +17,9 @@ function App() {
   function jumpTo(nextMove) {
     setCurrentMove(nextMove);
   }
+  function restartGame(nextMove) {
+    setCurrentMove(0);
+  }
 
   const moves = history.map((squares, move) => {
     let description;
@@ -34,12 +37,13 @@ function App() {
 
   return (
     <div className="game">
+      <div className='game_title'>Osho, Hammed and Saleem's Stacktreck Tic-tac-toe challenge</div>
       <div className="game-board">
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div className="game-info">
         {/* <ol>{moves}</ol> */}
-        <button onClick={()=>setCurrentMove(0)}>Restart Game</button>
+        <button onClick={restartGame}>Restart Game</button>
       </div>
     </div>
   );
